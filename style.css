@@ -1,0 +1,302 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+.icon-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.icon-container a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.icon-container img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("img/discordBackGround.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ccc;
+  font-size: 1.6rem;
+}
+
+.hero-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.info {
+  margin-top: 1.7rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.info h1 {
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+}
+
+.szloch-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 25rem;
+}
+
+.szloch-img img {
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  padding: 1rem 1rem;
+  height: 25rem;
+  cursor: pointer;
+}
+
+.mind-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.mind-area .mind-title {
+  margin-top: 1rem;
+}
+
+.mind-area .mind {
+  max-width: 90%;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f6483b;
+}
+
+.shake-animation {
+  animation: shake 1s 3;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-50px);
+  }
+
+  20% {
+    transform: translateX(50px);
+  }
+
+  40% {
+    transform: translateX(-25px);
+  }
+
+  60% {
+    transform: translateX(25px);
+  }
+
+  80% {
+    transform: translateX(-25px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* MEDIA */
+
+@media (min-width: 768px) {
+  .info {
+    font-size: 2.8rem;
+  }
+
+  .info h1 {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+
+  .mind-area {
+    font-size: 2.6rem;
+  }
+
+  .mind-area .mind {
+    margin-top: 3rem;
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info {
+    font-size: 3rem;
+  }
+  .info h1 {
+    margin-bottom: 3rem;
+    font-size: 5.3rem;
+  }
+  .mind-area {
+    font-size: 2.7rem;
+  }
+  .mind-area .mind {
+    margin-top: 2.5rem;
+    font-size: 3.2rem;
+  }
+}
+
+#toggleButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+#toggleTalkingButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 10px;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+#flag-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+#flag-container a {
+  display: inline-flex;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#flag-container img {
+  width: 40px;
+  height: 30px;
+}
+
+.language {
+  display: none;
+}
+.language.active {
+  display: block;
+}
+.flag-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flag-buttons button {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+}
+
+.flag-buttons img {
+  width: 30px;
+  height: 40px;
+}
+
+#flag-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.flag-link {
+  display: inline-block;
+  position: relative;
+}
+
+.flag-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 5px 10px;
+}
+
+.flag-link:hover .flag-button {
+  opacity: 1;
+}
+
+.flag-link:hover .flag-button:hover {
+  opacity: 1;
+}
+
+.flag-link:hover img {
+  opacity: 0.5;
+}
+
+.flag-link:hover:hover img {
+  opacity: 1;
+}
+
+.flag-link img {
+  width: 30px;
+  height: 40px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}

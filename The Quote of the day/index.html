@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szlachcielc Quotes Generator </title>
+    <link rel="shortcut icon" href="img/Szloch1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+        <audio id="myAudio" autoplay loop>
+        <source src="sounds/Mozart-Lacrimosa-but-humanity-has-ended.mp3" type="audio/mpeg">
+      </audio>
+    <div class="icon-container">
+        <button id="toggleButton" onclick="toggleAudio()" style="width: 30px; height: 30px; padding: 0;" title="Volume"><img src="img/musicStop.png" alt="Volume On"></button>
+        <a href="https://youtu.be/MAFQhKjXYtQ" target="_blank" title="YouTube"><img src="img/YTicon.png" class="youtub" alt="YouTube"></a>
+        <a href="https://discord.gg/RRHwxFhHkF" target="_blank" title="Discord, Sources and Contact"><img src="img/Discord.png" alt="Discord"></a>
+        <button id="toggleTalkingButton" onclick="toggleTalking()" style="width: 30px; height: 30px; padding: 0;" title="Turn On Szlachcielec Talking"><img id="toggleTalkingImg" src="img/SzlochMuted.png" alt="Talk"></button>
+    </div>
+    <div id="flag-container">
+        <a class="flag-link" onclick="showLanguage('pl')"><button class="flag-button"></button><img src="img/PLflag.png" alt="Polish Flag"></a>
+        <a class="flag-link" onclick="showLanguage('en')"><button class="flag-button"></button><img src="img/english.png" alt="English Flag"></a>
+        <a class="flag-link" onclick="showLanguage('ru')"><button class="flag-button"></button><img src="img/russian.png" alt="Russian Flag"></a>
+      </div>
+      <div class="hero-bg pl-version">
+        <div class="wrapper">
+          <div class="info">
+            <h1>Generator tekstów Szlachcielca</h1>
+            <p>Kliknij w Pana arystokratę i poznaj złotą myśl na dziś!</p>
+          </div>
+          <div class="szloch-img">
+            <img class='szloch-foto' src="/img/Szloch2.png" alt="Szloch's face">
+          </div>
+          <div class="mind-area">
+            <p class="mind-title">Szlachcielec mówi:</p>
+            <p class="mind"></p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg en-version" style="display: none;">
+        <div class="wrapper">
+          <div class="info">
+            <h1>Szlachcielec's Quote Generator</h1>
+            <p>Click on the nobleman and discover a golden thought for today!</p>
+          </div>
+          <div class="szloch-img">
+            <img class='szloch-foto' src="/img/Szloch2.png" alt="Szloch's face">
+          </div>
+          <div class="mind-area">
+            <p class="mind-title">Szlachciel says:</p>
+            <p class="mind"></p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg ru-version" style="display: none;">
+        <div class="wrapper">
+          <div class="info">
+            <h1>Генератор Цитат Шляхтича</h1>
+            <p>Нажмите на дворянина и узнайте золотую мысль на сегодня!</p>
+          </div>
+          <div class="szloch-img">
+            <img class='szloch-foto' src="/img/Szloch2.png" alt="Szloch's face">
+          </div>
+          <div class="mind-area">
+            <p class="mind-title">Шляхтич говорит:</p>
+            <p class="mind"></p>
+          </div>
+        </div>
+      </div>
+      <script src="./script.js"></script>
+</html>
